@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetContainerAddProductToCartID"
+    android:layout_width="match_parent"
+    android:layout_height="390dp"
+    android:backgroundTint="#F2F2F2"
+    android:background="@drawable/reduis_corner_bottom_sheet"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="5dp"
+        android:src="@drawable/ic_baseline_remove_24"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:contentDescription="@string/remover_bar" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:elevation="30dp"
+        app:cardCornerRadius="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/productImageBottomSheetID"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mensfashion"
+                android:contentDescription="@string/demo_text" />
+
+            <TextView
+                android:id="@+id/productNameIBottomShetID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/productImageBottomSheetID"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/product_name"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/productPriceBottomSheetID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/productImageBottomSheetID"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/_50_00"
+                android:textColor="@color/red_dark"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/productOldPriceBottomSheetID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/productPriceBottomSheetID"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/_50_00"
+                android:textColor="@color/gray3"
+                android:visibility="visible"
+                android:textSize="14sp" />
+            <NumberPicker
+                android:id="@+id/numberProductID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/colors"
+        android:textColor="@color/gray3"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/buttonPickColorsID"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/pick_a_color"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/blue_sky"
+        android:textSize="12sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/sizes"
+        android:textColor="@color/gray3"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/radio_selecter"
+            android:button="@android:color/transparent"
+            android:text="@string/xxxl"
+            android:textAlignment="center"
+            android:textColor="@drawable/button_textcolor" />
+
+        <CheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/radio_selecter"
+            android:button="@android:color/transparent"
+            android:text="@string/xxl"
+            android:textAlignment="center"
+            android:textColor="@drawable/button_textcolor" />
+
+        <CheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/radio_selecter"
+            android:button="@android:color/transparent"
+            android:text="@string/xl"
+            android:textAlignment="center"
+            android:textColor="@drawable/button_textcolor" />
+
+        <CheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/radio_selecter"
+            android:button="@android:color/transparent"
+            android:text="@string/l"
+            android:textAlignment="center"
+            android:textColor="@drawable/button_textcolor" />
+
+        <CheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/radio_selecter"
+            android:button="@android:color/transparent"
+            android:text="@string/m"
+            android:textAlignment="center"
+            android:textColor="@drawable/button_textcolor" />
+
+        <CheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/radio_selecter"
+            android:button="@android:color/transparent"
+            android:text="@string/s"
+            android:textAlignment="center"
+            android:textColor="@drawable/button_textcolor" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/bottomBarProductDetailsId"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shapping_bottom_bar_buttons"
+        android:layout_gravity="bottom">
+        <ImageView
+            android:id="@+id/back_id"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_arrow_back_buttom_bar"
+            android:contentDescription="@string/back"/>
+        <Button
+            android:id="@+id/addToCartButtonId"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/back_id"
+            android:layout_toStartOf="@+id/favoriteButton"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/blue_sky"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/add_to_cart"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/favoriteButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_baseline_favorite_border_24"
+            android:contentDescription="@string/back"/>
+
+    </RelativeLayout>
+</LinearLayout>

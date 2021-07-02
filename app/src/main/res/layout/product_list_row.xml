@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="270dp"
+    android:paddingRight="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/productCardViewID"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/productMainImageID"
+                android:layout_width="180dp"
+                android:layout_height="170dp"
+                android:contentDescription="@string/product_main_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pc" />
+
+            <RelativeLayout
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="151dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="63dp"
+                android:padding="4dp"
+                android:background="@drawable/shapping_edit_profile_button"
+                android:elevation="10dp"
+                tools:ignore="UnusedAttribute">
+                <Button
+                    android:id="@+id/favoriteCheckBoxID"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_baseline_favorite_border_24"
+                    app:backgroundTint="#EF0C0C" />
+            </RelativeLayout>
+
+            <!--
+            <CheckBox
+                android:id="@+id/favoriteCheckBoxID"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:button="@android:color/transparent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="151dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="63dp"
+                android:padding="6dp"
+                android:background="@drawable/shapping_edit_profile_button"
+                android:drawableStart="@drawable/favorite_checkbox_selecter"
+                android:elevation="10dp"
+                app:backgroundTint="#FFFFFF"
+                tools:ignore="UnusedAttribute" />
+            -->
+
+            <TextView
+                android:id="@+id/productNameID"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="@string/product_name"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/productPriceID"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="@string/_50_00"
+                android:textAlignment="textStart"
+                android:textColor="@color/red_dark"
+                android:textSize="14sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/productOldPriceID"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="52dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/_50_00"
+                android:textAlignment="textStart"
+                android:textColor="@color/gray3"
+                android:textSize="12sp"
+                tools:ignore="RtlCompat" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

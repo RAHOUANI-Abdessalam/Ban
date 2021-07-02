@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2F2F2"
+    tools:context=".CategoriesFragment">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/tool_bar_catalogue"/>
+    <EditText
+        android:id="@+id/searchEditText_id"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/shapping_search_edit_text"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawablePadding="12dp"
+        android:elevation="20dp"
+        android:hint="@string/what_are_you_looking_for"
+        android:inputType="text"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColorHint="@color/gray3"
+        android:textSize="12sp"
+        tools:targetApi="lollipop"
+        android:importantForAutofill="no" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+            
+            <androidx.cardview.widget.CardView
+                android:id="@+id/womencardID"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                app:cardCornerRadius="8dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/women_s_fashion"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/gray3"
+                        android:src="@drawable/womenfashoin"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/women_s_fashion" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mencardID"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/men_s_fashion"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/gray3"
+                        android:src="@drawable/mensfashion"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/women_s_fashion" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/phonecardID"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/phones"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/gray3"
+                        android:src="@drawable/phones"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/women_s_fashion" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pccardID"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/pc"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/gray3"
+                        android:src="@drawable/pc"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/women_s_fashion" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sportscardID"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/sports"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/gray3"
+                        android:src="@drawable/sport"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/women_s_fashion" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/smarthomecardID"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/smart_home"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:src="@drawable/womenfashoin"
+                        android:scaleType="centerCrop"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/gray3"
+                        android:src="@drawable/smarthome"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/women_s_fashion" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/artcardID"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/art"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/gray3"
+                        android:src="@drawable/art"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/women_s_fashion" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/babytoycardID"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/baby_toys"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/gray3"
+                        android:src="@drawable/babytoys"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/women_s_fashion" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

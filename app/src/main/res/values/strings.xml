@@ -1,0 +1,200 @@
+<resources>
+    <string name="app_name">Ban</string>
+    <string name="ban">BAN</string>
+    <string name="splash_text">Rocommended Products For Best Shopping</string>
+    <string name="shippe_discription">shippe for theme</string>
+    <string name="logo_discription">logo</string>
+    <string name="getstarted_discription">undrew</string>
+    <string name="smartshopping">smart shopping with</string>
+    <string name="explication">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac, aliquam est aenean aliquam sapien, dignissim viverra. Eu, mattis donec sit nullam enim. Dignissim euismod.</string>
+    <string name="get_started">Get Started</string>
+    <string name="welcome_back">Welcome back to</string>
+    <string name="sign_in">Sign in</string>
+    <string name="name_email">Full name or Email address</string>
+    <string name="password">Password</string>
+    <string name="forget_passeord">Forget Password ?</string>
+    <string name="login">LogIn</string>
+    <string name="havnt_accont">Dont have an account ?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="welcone_on">Welcone to</string>
+    <string name="let_s_help">Let’s help you meet up your products</string>
+    <string name="full_name">Full name</string>
+    <string name="mail">Email address</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="register">Register</string>
+    <string name="have_an_accont">Already have an account ?</string>
+    <string name="what_are_you_looking_for">What are you looking for ?</string>
+    <string name="cart">Cart</string>
+    <string name="string_cart">cart</string>
+    <string name="demo_text">Demo text</string>
+    <string name="button_to_go_to_carte_page">button to Go to carte page</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="catalogue">Catalogue</string>
+    <string name="back">Back</string>
+    <string name="favorite">Favorite</string>
+    <string name="delete">Delete</string>
+    <string name="check_out">Check out</string>
+    <string name="total_price">Total price</string>
+    <string name="dollars_0">$0.00</string>
+    <string name="confirm">Confirm</string>
+    <string name="delivery">Delivery</string>
+    <string name="items">Items</string>
+    <string name="defavorite">Defavorite</string>
+    <string name="user_name">USER Name</string>
+    <string name="profile_image">profile image</string>
+    <string name="phone_number">+213 777 03 — —</string>
+    <string name="shipping_addresses">Shipping Addresses</string>
+    <string name="payment_methodes">Payment Methodes</string>
+    <string name="orders">Orders</string>
+    <string name="setting">Setting</string>
+    <string name="exit">Exit</string>
+    <string name="favorites">Favorites</string>
+    <string name="privecy_policy"><u>Privecy policy</u></string>
+    <string name="success">Success</string>
+    <string name="success_buyin">Your order will be delivered soon. It can be tracked in the “Orders” section.</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="go_to_orders"><u>Go to Orders</u></string>
+    <string name="women_s_fashion">Women’s Fashion</string>
+    <string name="remover_bar">remover bar</string>
+    <string name="clothing">Clothing</string>
+    <string name="string_clothing">Clothing</string>
+    <string name="shoes">Shoes</string>
+    <string name="jewelry">Jewelry</string>
+    <string name="watches">Watches</string>
+    <string name="handbags">Handbags</string>
+    <string name="accessories">Accessories</string>
+    <string name="men_s_fashion">Men’s Fashion</string>
+    <string name="girl_s_fashion">Girl’s Fashion</string>
+    <string name="boy_s_fashion">Boy’s Fashion</string>
+    <string name="phones">Phones</string>
+    <string name="pc">Pc</string>
+    <string name="sports">Sports</string>
+    <string name="smart_home">Smart Home</string>
+    <string name="art">Art</string>
+    <string name="baby_toys">Baby toys</string>
+    <string name="skip_for_now">Skip for now</string>
+    <string name="validate">Validate</string>
+    <string name="what_are_you_interested_in">What are you interested in?</string>
+    <string name="select_some_topics_you_re_interested_in_to_help_personalize_your_shopping_experience_starting_with_finding_what_s_you_like">Select some topics you\'re interested in to help personalize your Shopping experience, starting with finding what\'s you like</string>
+    <string name="categories">Categories</string>
+    <string name="show_more">Show more</string>
+    <string name="products">Products</string>
+    <string name="marks">marks</string>
+    <string name="cars">cars</string>
+    <string name="mix">mix</string>
+    <string name="other">Other</string>
+    <string name="food">Food</string>
+    <string name="beauty_and_perfumes">Beauty and perfumes</string>
+    <string name="health">Health</string>
+    <string name="car_and_motorbike">Car and motorbike</string>
+    <string name="it_and_high_tech">IT and high-tech</string>
+    <string name="gardening">Gardening</string>
+    <string name="diy">Diy</string>
+    <string name="home_appliance">Home appliance</string>
+    <string name="games_and_accessories">Games and accessories</string>
+    <string name="trend">Trend</string>
+    <string name="lowest_rating">Lowest rating</string>
+    <string name="average_rating">Average rating</string>
+    <string name="best_rating">Best rating</string>
+    <string name="how_much_can_you_spend">How much can you spend :</string>
+    <string name="apple">Apple</string>
+    <string name="microsoft">Microsoft</string>
+    <string name="toyota">Toyota</string>
+    <string name="bmw">BMW</string>
+    <string name="intel">Intel</string>
+    <string name="nike">Nike</string>
+    <string name="louis_vuitton">Louis Vuitton</string>
+    <string name="brands">Brands</string>
+    <string name="nescafe">Nescafe</string>
+    <string name="philips">Philips</string>
+    <string name="canon">Canon</string>
+    <string name="gucci">Gucci</string>
+    <string name="danone">Danone</string>
+    <string name="adidas">adidas</string>
+    <string name="prada">Prada</string>
+    <string name="dior">Dior</string>
+    <string name="tesla">Tesla</string>
+    <string name="recomended">Recommended</string>
+    <string name="see_more">See more</string>
+    <string name="featured">Featured</string>
+    <string name="product_main_image">product main image</string>
+    <string name="product_name">Product name</string>
+    <string name="_50_00">$50.00</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="colors">Colors</string>
+    <string name="red">red</string>
+    <string name="bleu">bleu</string>
+    <string name="white">white</string>
+    <string name="black">black</string>
+    <string name="perpul">perpul</string>
+    <string name="green">green</string>
+    <string name="sizes">Sizes</string>
+    <string name="xl">Xl</string>
+    <string name="l">L</string>
+    <string name="s">S</string>
+    <string name="product_details">Product details</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien scelerisque tincidunt faucibus malesuada orci, pellentesque congue. Pellentesque tempus, magna enim pretium cras.</string>
+    <string name="_168_items">168 Items</string>
+    <string name="somthing_else">Somthing else !!</string>
+    <string name="reviews">Reviews</string>
+    <string name="products_related_to_this_item">Products related to this item</string>
+    <string name="first_person">First person</string>
+    <string name="date">23 april 2021</string>
+    <string name="helpful">Helpful</string>
+    <string name="comment">Comment</string>
+    <string name="_380_people_found_this_helpful">380 people found this helpful</string>
+    <string name="price">Price</string>
+    <string name="_0">$0</string>
+    <string name="_50000">$100000</string>
+    <string name="m">M</string>
+    <string name="xxl">XXL</string>
+    <string name="xxxl">XXXL</string>
+    <string name="clear">Clear</string>
+    <string name="result">Result</string>
+    <string name="pick_a_color">Pick a color</string>
+    <string name="prefLoginState">loginstate</string>
+    <array name="range_slider_value">
+        <item>10</item>
+        <item>7000</item>
+    </array>
+    <!--
+    <string-array name="array_categories">
+        <item>Women's Fashion</item>
+        <item>Men's Fashoin</item>
+        <item>Phones</item>
+        <item>Pc</item>
+        <item>Baby toys</item>
+        <item>Sport</item>
+        <item>Smart Home</item>
+        <item>Art</item>
+        <item>Food</item>
+        <item>Beauty and perfumes</item>
+        <item>Health</item>
+        <item>Car and motorbike</item>
+        <item>IT and hight tech</item>
+        <item>Gardening</item>
+        <item>Diy</item>
+        <item>Home appliance</item>
+        <item>Games and accessories</item>
+    </string-array>
+    <string-array name="array_brands">
+        <item>Apple</item>
+        <item>Microsoft</item>
+        <item>Toyota</item>
+        <item>Bmw</item>
+        <item>Intel</item>
+        <item>Nike</item>
+        <item>Louis Vuitton</item>
+        <item>Nescafe</item>
+        <item>Philips</item>
+        <item>Canon</item>
+        <item>Gucci</item>
+        <item>Danone</item>
+        <item>adidas</item>
+        <item>Prada</item>
+        <item>Dior</item>
+        <item>Tesla</item>
+    </string-array>
+    -->
+</resources>

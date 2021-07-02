@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GetStarted">
+
+    <ImageView
+        android:id="@+id/shippeid"
+        android:layout_width="210dp"
+        android:layout_height="194dp"
+        android:contentDescription="@string/shippe_discription"
+        android:src="@drawable/shippe"
+        />
+
+    <ImageView
+        android:id="@+id/getstrtdid"
+        android:layout_width="247.06dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:transitionName="logo_trns"
+        android:contentDescription="@string/getstarted_discription"
+        android:src="@drawable/getstarted" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/smartshoid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transitionName="text_trns"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="@string/smartshopping"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/appnameid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transitionName="app_name_trns"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/ban"
+            android:textAlignment="center"
+            android:textColor="@color/blue_sky"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/explicationtextid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/explication"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/buttongetstartedID"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/get_started"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"/>
+</LinearLayout>

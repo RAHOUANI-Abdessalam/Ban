@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/shippeid"
+        android:layout_width="210dp"
+        android:layout_height="194dp"
+        android:contentDescription="@string/shippe_discription"
+        android:src="@drawable/shippe"
+        app:layout_constraintBottom_toTopOf="@+id/logoid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+
+    <ImageView
+        android:id="@+id/logoid"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:transitionName="logo_trns"
+        android:contentDescription="@string/logo_discription"
+        android:src="@drawable/logo_transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appnameid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="app_name_trns"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/ban"
+        android:textAlignment="center"
+        android:textColor="@color/blue_sky"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoid"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/splashtextid"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:transitionName="text_trns"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="@string/splash_text"
+        android:textAlignment="center"
+        android:textColor="#BE000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appnameid"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

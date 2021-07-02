@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homeId"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+
+
+    <item android:id="@+id/categoriesId"
+        android:icon="@drawable/ic_baseline_grid_on_24"
+        android:title="categories"/>
+
+
+
+    <item android:id="@+id/favoriteId"
+        android:icon="@drawable/ic_heart_sel"
+        android:title="favorite"/>
+
+
+
+    <item android:id="@+id/profileId"
+        android:icon="@drawable/ic_baseline_person_outline_24"
+        android:title="profile"/>
+
+</menu>
