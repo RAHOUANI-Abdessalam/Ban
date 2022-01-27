@@ -65,7 +65,7 @@
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:fontFamily="@font/poppins"
-        android:text="@string/explication"
+        android:text="@string/we_suggest_products_to_you_based_on_your_potential_interests_by_our_system_of_recommendation_to_brings_you_with_us_to_the_next_level_of_shopping"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="15sp" />

@@ -28,6 +28,7 @@ public class Login extends AppCompatActivity {
     private Button signup,frgtpsswd,login,guest;
     private TextInputEditText fullnameORemail,password;
     SharedPreferences sharedPreferences;
+    int lastID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,32 +85,36 @@ public class Login extends AppCompatActivity {
         if(loginStatus.equals("loggedin")){
             Intent intent =new Intent(Login.this,Home.class);
             startActivity(intent);
+            finish();
         }
     }
     private void login(String email,String password){
         ProgressDialog progressDialog = new ProgressDialog(Login.this);
         progressDialog.setCancelable(false);
         progressDialog.setIndeterminate(false);
-        progressDialog.setTitle("Registering New Account");
+        progressDialog.setTitle("Login Account");
         progressDialog.show();
-        String uRl = "http://10.0.2.2/loginregister/login.php";
+        String uRl = "http://10.0.2.2/loginregister/login2.php";
         StringRequest request = new StringRequest(Request.Method.POST, uRl, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                if(response.equals("Login Success")){
+                try {
+                    lastID = Integer.valueOf(response);
                     progressDialog.dismiss();
-                    Toast.makeText(Login.this,response,Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(Login.this,response,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this,"Successfully Login",Toast.LENGTH_SHORT).show();
                     SharedPreferences.Editor editor= sharedPreferences.edit();
                     editor.putString(getResources().getString(R.string.prefLoginState),"loggedin");
                     editor.apply();
 
                     Intent intent =new Intent(Login.this,Home.class);
+                    intent.putExtra("user_ID",lastID);
                     startActivity(intent);
                     finish();
                 }
-                else {
+                catch (Exception e){
                     progressDialog.dismiss();
-                    Toast.makeText(Login.this,response,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this,e.toString(),Toast.LENGTH_SHORT).show();
                 }
             }
         }, new Response.ErrorListener() {

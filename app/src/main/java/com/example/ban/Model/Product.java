@@ -1,8 +1,54 @@
 package com.example.ban.Model;
 
 public class Product {
+    private int id;
     private String productName,price,oldPrice;
+    private int favorite_stat;
+    private String content;
+    private String imageSTR;
     private int image ;
+
+    public String getImageSTR() {
+        return imageSTR;
+    }
+
+    public void setImageSTR(String imageSTR) {
+        this.imageSTR = imageSTR;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getFavorite_stat() {
+        return favorite_stat;
+    }
+
+    public void setFavorite_stat(int favorite_stat) {
+        this.favorite_stat = favorite_stat;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public Product(int id, String productName, String price, String oldPrice, int favorite_stat, String content, String image) {
+        this.id = id;
+        this.productName = productName;
+        this.price = price;
+        this.oldPrice = oldPrice;
+        this.favorite_stat = favorite_stat;
+        this.content = content;
+        this.imageSTR = image;
+    }
 
     public Product() {
     }

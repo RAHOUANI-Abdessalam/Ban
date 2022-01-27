@@ -16,6 +16,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.ban.FavoritesFragment;
 import com.example.ban.Model.Product;
 import com.example.ban.R;
@@ -49,7 +50,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
         holder.productName.setText(product.getProductName());
         holder.price.setText(product.getPrice());
         holder.oldPrice.setText(product.getOldPrice());
-        holder.image.setImageResource(product.getImage());
+//        holder.image.setImageResource(product.getImage());
+        Glide.with(context).load(product.getImageSTR()).into(holder.image);
     }
 
 

@@ -102,6 +102,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/phonesCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/phones"
@@ -112,6 +113,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/pcCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/pc"
@@ -127,6 +129,7 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="5dp">
                     <CheckBox
+                        android:id="@+id/artCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/art"
@@ -137,6 +140,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/babytoyCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/baby_toys"
@@ -147,6 +151,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/foodCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/food"
@@ -157,6 +162,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/smarthomeCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/smart_home"
@@ -172,6 +178,7 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="5dp">
                     <CheckBox
+                        android:id="@+id/beautyAndPerfumesCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/beauty_and_perfumes"
@@ -182,6 +189,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/healthCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/health"
@@ -192,6 +200,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/sportsCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/sports"
@@ -208,6 +217,7 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="5dp">
                     <CheckBox
+                        android:id="@+id/carAndMotorbikeCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/car_and_motorbike"
@@ -218,6 +228,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/itAndHighTechCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/it_and_high_tech"
@@ -228,6 +239,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/gardeningCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/gardening"
@@ -245,6 +257,7 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="5dp">
                     <CheckBox
+                        android:id="@+id/diyCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/diy"
@@ -255,6 +268,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/homeApplianceCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/home_appliance"
@@ -265,6 +279,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/gamesAndAccessoriesCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/games_and_accessories"
@@ -321,6 +336,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/shoesCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/shoes"
@@ -331,6 +347,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/jewerlyCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/jewelry"
@@ -341,6 +358,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/watchesCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/watches"
@@ -351,6 +369,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp"/>
                     <CheckBox
+                        android:id="@+id/carsCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/cars"
@@ -367,6 +386,7 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="5dp">
                     <CheckBox
+                        android:id="@+id/handbagsCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/handbags"
@@ -377,6 +397,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/accessoriesCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/accessories"
@@ -387,6 +408,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/girlsFashionCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/girl_s_fashion"
@@ -402,6 +424,7 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="5dp">
                     <CheckBox
+                        android:id="@+id/otherCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/other"
@@ -412,9 +435,70 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp"/>
                     <CheckBox
+                        android:id="@+id/mixCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/mix"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selecter"
+                        android:textColor="@drawable/button_textcolor"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_marginEnd="10dp"/>
+                    <CheckBox
+                        android:id="@+id/pcAccessoriesCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="@string/pc_accessories"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selecter"
+                        android:textColor="@drawable/button_textcolor"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_marginEnd="10dp"/>
+                    <CheckBox
+                        android:id="@+id/phoneCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="@string/phone"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selecter"
+                        android:textColor="@drawable/button_textcolor"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+                    <CheckBox
+                        android:id="@+id/technologieCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="@string/technologie"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selecter"
+                        android:textColor="@drawable/button_textcolor"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_marginEnd="10dp"/>
+                    <CheckBox
+                        android:id="@+id/housesCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="@string/houses"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selecter"
+                        android:textColor="@drawable/button_textcolor"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_marginEnd="10dp"/>
+                    <CheckBox
+                        android:id="@+id/feedCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="feed"
                         android:button="@android:color/transparent"
                         android:background="@drawable/radio_selecter"
                         android:textColor="@drawable/button_textcolor"
@@ -466,6 +550,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/lowestRatingCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/lowest_rating"
@@ -476,6 +561,7 @@
                         android:paddingEnd="10dp"
                         android:layout_marginEnd="10dp" />
                     <CheckBox
+                        android:id="@+id/averageRatingCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:text="@string/average_rating"
@@ -487,6 +573,7 @@
                         android:layout_marginEnd="10dp" />
 
                     <CheckBox
+                        android:id="@+id/bestRatingCheckBox"
                         android:layout_width="wrap_content"
                         android:layout_height="35dp"
                         android:background="@drawable/radio_selecter"
@@ -519,6 +606,7 @@
                     app:values="@array/range_slider_value"/>
 
             </LinearLayout>
+            <!--
             <View
                 android:layout_width="match_parent"
                 android:layout_height="6dp"
@@ -725,6 +813,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="10dp"/>
             </LinearLayout>
+            -->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="6dp"

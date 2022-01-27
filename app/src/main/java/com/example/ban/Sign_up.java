@@ -4,7 +4,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -26,10 +28,15 @@ public class Sign_up extends AppCompatActivity {
 
     private Button signin,register;
     private TextInputEditText fullname,email,password,confirmPassword;
+    int lastID;
+    SharedPreferences sharedPreferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        sharedPreferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+
         fullname=findViewById(R.id.editTextnameId);
         email=findViewById(R.id.editTxtMaileId);
         password=findViewById(R.id.editTextPasswordid);
@@ -70,19 +77,25 @@ public class Sign_up extends AppCompatActivity {
         progressDialog.setIndeterminate(false);
         progressDialog.setTitle("Registering New Account");
         progressDialog.show();
-        String uRl = "http://10.0.2.2/loginregister/register.php";
+        String uRl = "http://10.0.2.2/loginregister/register2.php";
         StringRequest request = new StringRequest(Request.Method.POST, uRl, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                if (response.equals("Successfully Registered")){
+                Toast.makeText(Sign_up.this,"Your ID : " +response.toString(),Toast.LENGTH_SHORT).show();
+                try {
+                    lastID = Integer.valueOf(response);
                     progressDialog.dismiss();
-                    Toast.makeText(Sign_up.this,response,Toast.LENGTH_SHORT).show();
-                    Intent intent =new Intent(Sign_up.this,Login.class);
+                    Toast.makeText(Sign_up.this,"Successfully Registered",Toast.LENGTH_SHORT).show();
+//                    SharedPreferences.Editor editor= sharedPreferences.edit();
+//                    editor.putString(getResources().getString(R.string.prefLoginState),"loggedin");
+//                    editor.apply();
+                    Intent intent =new Intent(Sign_up.this,UserInterrogation.class);
+                    intent.putExtra("userID",lastID);
                     startActivity(intent);
                     finish();
-                }else {
+                }catch (Exception e){
                     progressDialog.dismiss();
-                    Toast.makeText(Sign_up.this,response,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Sign_up.this,e.toString(),Toast.LENGTH_SHORT).show();
                 }
 
             }

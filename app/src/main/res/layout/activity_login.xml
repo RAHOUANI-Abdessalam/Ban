@@ -119,7 +119,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/name_email">
+            android:hint="@string/email_address">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTxtnameLoginId"

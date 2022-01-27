@@ -154,6 +154,13 @@
     <string name="result">Result</string>
     <string name="pick_a_color">Pick a color</string>
     <string name="prefLoginState">loginstate</string>
+    <string name="pc_accessories">pc accessories</string>
+    <string name="phone">phone</string>
+    <string name="technologie">technologie</string>
+    <string name="houses">houses</string>
+    <string name="email_address">Email Address</string>
+    <string name="we_suggest_products_to_you_based_on_your_potential_interests_by_our_system_of_recommendation_to_brings_you_with_us_to_the_next_level_of_shopping">We suggest products to you based on your potential interests by our system of recommendation to brings you with us to the next level of shopping</string>
+    <string name="top_for_you">Top For You</string>
     <array name="range_slider_value">
         <item>10</item>
         <item>7000</item>

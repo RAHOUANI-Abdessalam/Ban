@@ -16,15 +16,23 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
+import static android.content.Context.MODE_PRIVATE;
 
 public class ProfileFragment extends Fragment {
     private CardView shippingAddress,paymentMethod,order,favorite,prefernceData,setting,logout;
+    SharedPreferences sharedPreferences1;
+    private static  final String SHAREDUSERID = "userid";
+    private static  final String TEXT = "userid";
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @NonNull ViewGroup container,
                              @NonNull Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_profile, container, false);
+
+        sharedPreferences1 = getActivity().getSharedPreferences(SHAREDUSERID, Context.MODE_PRIVATE);
 
         // initialisation component by ID
 //        shippingAddress = v.findViewById(R.id.shippingAdrsCardViewId);
@@ -48,16 +56,17 @@ public class ProfileFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("UserInfo", Context.MODE_PRIVATE);
+        final SharedPreferences sharedPreferences =getActivity().getSharedPreferences("userInfo",Context.MODE_PRIVATE);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString(getResources().getString(R.string.prefLoginState),"loggedout");
+                editor.putString(v.getResources().getString(R.string.prefLoginState),"loggedout");
                 editor.apply();
+                sharedPreferences1.edit().clear().commit();
                 Intent intent=new Intent(getActivity(),Login.class);
                 startActivity(intent);
-                getActivity().finish();
+//                getActivity().finish();
             }
         });
         return v;
